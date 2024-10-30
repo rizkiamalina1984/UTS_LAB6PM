@@ -1,0 +1,116 @@
+<!-- res/layout/activity_main2.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F5F5DC"
+    android:padding="16dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GREETING CARD MAKER"
+        android:textColor="#1C3879"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp" />
+
+    <!-- Card Background for Form -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#E6EEF9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/form_background"> <!-- Rounded background -->
+
+            <!-- Subtitle Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fill This To Make Your Card"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="italic"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="28dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Name Field -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Penerima :"
+                android:backgroundTint="#F5F5DC"
+                android:padding="12dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/edit_text_background" />
+
+            <!-- Greeting Field -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kalimat Ucapan :"
+                android:backgroundTint="#F5F5DC"
+                android:padding="12dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/edit_text_background" />
+
+            <!-- Message Field -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pesan :"
+                android:backgroundTint="#F5F5DC"
+                android:padding="12dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/edit_text_background" />
+
+            <!-- Sender Name Field -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Pengirim :"
+                android:backgroundTint="#F5F5DC"
+                android:padding="12dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/edit_text_background" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Submit Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="#1C3879"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <!-- Instruction Text Below Button -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click This and Select The Template"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="20dp" />
+</LinearLayout>
