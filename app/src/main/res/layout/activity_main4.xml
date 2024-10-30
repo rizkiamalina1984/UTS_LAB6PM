@@ -1,0 +1,129 @@
+<!-- res/layout/activity_main4.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5DC"
+    android:padding="16dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GREETING CARD MAKER"
+        android:textColor="#1C3879"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp" />
+
+    <!-- Template Card Background -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#E6EEF9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1C3879"
+            android:padding="16dp">
+
+            <!-- Balloon Icon in Top-Right Corner -->
+            <ImageView
+                android:id="@+id/balloonIcon"
+                android:layout_width="103dp"
+                android:layout_height="108dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/balon" />
+
+            <TextView
+                android:id="@+id/receiverNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Dear ..."
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/greetingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/receiverNameTextView"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="HAPPY BIRTHDAY"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/greetingTextView"
+                android:layout_marginTop="95dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:lineSpacingExtra="4sp"
+                android:padding="16dp"
+                android:text="Di hari istimewamu ini..."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/senderNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/messageTextView"
+                android:layout_marginTop="158dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="From: ..."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/heartIcon"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="-19dp"
+                android:src="@drawable/love" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Download Button with Icon -->
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#608BC1"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:scaleType="centerInside" />
+
+
+</LinearLayout>

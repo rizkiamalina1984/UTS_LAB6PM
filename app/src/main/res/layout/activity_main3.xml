@@ -1,10 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- res/layout/activity_main3.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    android:orientation="vertical"
+    android:background="#F5F5DC"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GREETING CARD MAKER"
+        android:textColor="#1C3879"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp" />
+
+    <!-- Card Background for Template Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#E6EEF9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Template Title Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Template"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp" />
+
+            <!-- Template Cards Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <!-- Template 1 (Left) with Rounded Corners -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_background"
+                    android:contentDescription="Template 1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/template1" />
+
+                <!-- Template 2 (Right) with Rounded Corners -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/template2"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Template 2" />
+            </LinearLayout>
+
+            <!-- Template 3 (Centered Below) with Rounded Corners -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/template3"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:contentDescription="Template 3"
+                android:background="@drawable/rounded_background" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
