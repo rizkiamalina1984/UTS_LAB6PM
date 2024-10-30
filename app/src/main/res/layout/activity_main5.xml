@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F9F7E5"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GREETING CARD MAKER"
+        android:textColor="#1E3D8F"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp" />
+
+    <!-- Card Background with Rounded Corners and Updated Size -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#508EDC">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp">
+
+            <!-- Top Left Flower Decoration -->
+
+            <!-- Greeting Text -->
+
+            <!-- Message Body -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Dear..."
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy Wedding!"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat menempuh hidup baru! Semoga pernikahan ini menjadi awal dari kebahagiaan yang abadi. Semoga kalian selalu saling mencintai, mendukung, dan menjadi pasangan yang harmonis. Semoga Tuhan memberkati rumah tangga kalian."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center"/>
+
+            <!-- Signature -->
+
+            <!-- Bottom Right Flower Decoration -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="220dp"
+                android:layout_marginBottom="80dp"
+                android:fontFamily="sans-serif"
+                android:text="From : Z"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/bottom_right_flower"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginBottom="-6dp"
+                android:src="@drawable/bungapinggir" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Save Button with Updated Style -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#608BC1"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-medium"/>
+
+</LinearLayout>
