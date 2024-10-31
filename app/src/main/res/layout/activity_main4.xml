@@ -109,21 +109,4 @@
                 android:src="@drawable/love" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
-    <!-- Download Button with Icon -->
-    <Button
-        android:id="@+id/downloadButton"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#608BC1"
-        android:text="Save"
-        android:textColor="#FFFFFF"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        android:padding="10dp"
-        android:scaleType="centerInside" />
-
-
 </LinearLayout>

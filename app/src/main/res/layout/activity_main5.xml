@@ -42,6 +42,7 @@
 
             <!-- Message Body -->
             <TextView
+                android:id="@+id/receiverNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
@@ -51,6 +52,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/greetingTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Happy Wedding!"
@@ -62,6 +64,7 @@
                 android:textStyle="italic"/>
 
             <TextView
+                android:id="@+id/messageTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Selamat menempuh hidup baru! Semoga pernikahan ini menjadi awal dari kebahagiaan yang abadi. Semoga kalian selalu saling mencintai, mendukung, dan menjadi pasangan yang harmonis. Semoga Tuhan memberkati rumah tangga kalian."
@@ -79,6 +82,7 @@
             <!-- Bottom Right Flower Decoration -->
 
             <TextView
+                android:id="@+id/senderNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -103,17 +107,4 @@
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <!-- Save Button with Updated Style -->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#608BC1"
-        android:text="Save"
-        android:textColor="#FFFFFF"
-        android:padding="10dp"
-        android:fontFamily="sans-serif-medium"/>
-
 </LinearLayout>

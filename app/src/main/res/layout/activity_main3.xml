@@ -49,7 +49,6 @@
                 android:layout_gravity="center_horizontal"
                 android:paddingBottom="16dp" />
 
-            <!-- Template Cards Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,6 +58,7 @@
 
                 <!-- Template 1 (Left) with Rounded Corners -->
                 <ImageView
+                    android:id="@+id/template1"
                     android:layout_width="0dp"
                     android:layout_height="230dp"
                     android:layout_marginEnd="8dp"
@@ -70,6 +70,7 @@
 
                 <!-- Template 2 (Right) with Rounded Corners -->
                 <ImageView
+                    android:id="@+id/template2"
                     android:layout_width="0dp"
                     android:layout_height="230dp"
                     android:layout_weight="1"
@@ -82,6 +83,7 @@
 
             <!-- Template 3 (Centered Below) with Rounded Corners -->
             <ImageView
+                android:id="@+id/template3"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:src="@drawable/template3"
@@ -90,6 +92,7 @@
                 android:scaleType="fitCenter"
                 android:contentDescription="Template 3"
                 android:background="@drawable/rounded_background" />
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

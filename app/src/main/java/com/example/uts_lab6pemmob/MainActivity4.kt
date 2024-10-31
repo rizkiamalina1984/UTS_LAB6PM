@@ -1,9 +1,12 @@
+package com.example.uts_lab6pemmob
+
 import android.app.DownloadManager
 import android.content.Context
 import android.net.Uri
-import android.os.Environment
 import android.os.Bundle
+import android.os.Environment
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.uts_lab6pemmob.R
 
@@ -13,22 +16,17 @@ class MainActivity4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-        val downloadButton = findViewById<Button>(R.id.downloadButton)
-        downloadButton.setOnClickListener {
-            downloadFile("https://example.com/yourfile.jpg", "yourfile.jpg")
-        }
-    }
+        // Get data from Intent
+        val name = intent.getStringExtra("name") ?: ""
+        val greeting = intent.getStringExtra("greeting") ?: ""
+        val message = intent.getStringExtra("message") ?: ""
+        val sender = intent.getStringExtra("sender") ?: ""
 
-    private fun downloadFile(url: String, fileName: String) {
-        val request = DownloadManager.Request(Uri.parse(url))
-            .setTitle("Downloading...")
-            .setDescription("Please wait")
-            .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-            .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName)
-            .setAllowedOverMetered(true)
-            .setAllowedOverRoaming(true)
+        // Set data to the TextViews
+        findViewById<TextView>(R.id.receiverNameTextView).text = "Dear $name"
+        findViewById<TextView>(R.id.greetingTextView).text = greeting
+        findViewById<TextView>(R.id.messageTextView).text = message
+        findViewById<TextView>(R.id.senderNameTextView).text = "From: $sender"
 
-        val downloadManager = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
-        downloadManager.enqueue(request)
     }
 }

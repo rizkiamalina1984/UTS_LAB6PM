@@ -34,8 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:background="@drawable/form_background"> <!-- Rounded background -->
+            android:padding="16dp">
 
             <!-- Subtitle Text -->
             <TextView
@@ -47,53 +46,53 @@
                 android:fontFamily="sans-serif-medium"
                 android:textStyle="italic"
                 android:layout_gravity="center_horizontal"
-                android:paddingBottom="28dp"
-                android:layout_marginBottom="20dp" />
+                android:paddingBottom="28dp" />
 
             <!-- Name Field -->
             <EditText
+                android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nama Penerima :"
-                android:backgroundTint="#F5F5DC"
+                android:backgroundTint="#F3F3E0"
                 android:padding="12dp"
-                android:layout_marginBottom="35dp"
-                android:background="@drawable/edit_text_background" />
+                android:layout_marginBottom="20dp" />
 
             <!-- Greeting Field -->
             <EditText
+                android:id="@+id/greetingEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Kalimat Ucapan :"
-                android:backgroundTint="#F5F5DC"
+                android:backgroundTint="#F3F3E0"
                 android:padding="12dp"
-                android:layout_marginBottom="35dp"
-                android:background="@drawable/edit_text_background" />
+                android:layout_marginBottom="20dp" />
 
             <!-- Message Field -->
             <EditText
+                android:id="@+id/messageEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Pesan :"
-                android:backgroundTint="#F5F5DC"
+                android:backgroundTint="#F3F3E0"
                 android:padding="12dp"
-                android:layout_marginBottom="35dp"
-                android:background="@drawable/edit_text_background" />
+                android:layout_marginBottom="20dp" />
 
             <!-- Sender Name Field -->
             <EditText
+                android:id="@+id/senderEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nama Pengirim :"
-                android:backgroundTint="#F5F5DC"
+                android:backgroundTint="#F3F3E0"
                 android:padding="12dp"
-                android:layout_marginBottom="35dp"
-                android:background="@drawable/edit_text_background" />
+                android:layout_marginBottom="20dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <!-- Submit Button -->
     <Button
+        android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
