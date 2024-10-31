@@ -1,6 +1,8 @@
 # UTS_LAB6PM
 Nama : Rizki Amalina Triwahyuni Nasution 
+
 NIM : 221401123
+
 Lab : 6
 
 # Deskripsi dan Alur Aplikasi 
